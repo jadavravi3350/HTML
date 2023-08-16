@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin-left:200px ;
+        }
+        .x{
+            height: 400px;
+            width: 350px;
+            background: lightblue;
+            
+            
+        }
+        
+        .img{
+            height: 300px;
+            width: 250px;
+            background: url('image/04\ task\ hover.jpg');
+            transform: translate(-150px,50px);
+            background-size: 100% 100%;
+            border-radius: 30px;
+            box-shadow: 4px 4px 9px red,-4px -4px 9px blue;
+        }
+
+        .y{
+            height: 200px;
+            width: 350px;
+            background: lightslategray;
+            text-align: center;
+            font-size: 30px;
+        }
+        .rj{
+            height: 50px;
+            width: 350px;
+            background: linear-gradient(rgb(255, 68, 0),white,green);
+            transform: translate(-250px,-50px);
+            font-size: 30px;
+            border-radius: 20px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            transition: 2s;
+            opacity: 0;
+            
+        }
+
+        .x:hover .rj{
+            transform: translate(-250px,300px);
+            opacity: 1;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="x">
+        <div class="img">
+        <div class="rj">
+            jadav ravi
+        </div>
+       
+
+        </div>
+
+    </div>
+
+
+    <div class="y">
+        Laptop Backpack <br>
+        120 Rs. 200 OFF <br>
+        <button style="margin-left: 10px; font-size: 30px;">Add to cart</button>
+    </div>
+</body>
+</html>
