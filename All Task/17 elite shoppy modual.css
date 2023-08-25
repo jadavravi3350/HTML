@@ -1,0 +1,448 @@
+body * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid; */
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+.header1 {
+    background: black;
+    width: 100%;
+    height: 30px;
+
+}
+
+.header1 li {
+    display: inline;
+    width: 16.67%;
+    margin: 100px;
+    line-height: 30px;
+
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.header2 {
+    background: white;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    line-height: 120px;
+}
+
+.header2 .x {
+    width: 33.33%;
+}
+
+.nav {
+    background: black;
+    width: 100%;
+    padding: 50px;
+
+
+}
+
+.nav li {
+    display: inline;
+    margin-left: 50px;
+}
+
+.nav .gift {
+    margin-left: 50%;
+}
+
+.section {
+    height: 450px;
+    background:url(https://nurimetin.github.io/eliteshoppy.github.io/images/banner4.jpg);
+    text-align: center;
+    padding-top: 100px;
+}
+
+.section p {
+
+    font-size: 50px;
+    word-spacing: 10px;
+
+}
+
+.section2 {
+    background: white;
+    height: 450px;
+    display: flex;
+    padding: 50px 0 0 200px;
+    gap: 50px;
+}
+
+.section2 .x {
+    background: url(https://nurimetin.github.io/eliteshoppy.github.io/images/bottom1.jpg);
+    text-align: center;
+    line-height: 200px;
+    height: 350px;
+    width: 40%;
+}
+
+.section3 {
+    height: 450px;
+    display: flex;
+}
+
+.section3 .y {
+    width: 50%;
+    height: 450px;
+    background: url(https://nurimetin.github.io/eliteshoppy.github.io/images/mid.jpg);
+}
+
+.section3 .y1 {
+    background: #20c997;
+    width: 50%;
+    height: 450px;
+}
+
+.y1 .yi {
+    width: 80%;
+    background: white;
+    height: 350px;
+    margin: 80px 0 0 0;
+    padding: 30px;
+
+}
+
+.yii p {
+    padding: 20px;
+}
+
+.yiii {
+    width: 100%;
+    background: red;
+    height: 170px;
+    display: flex;
+}
+
+
+.yiii .z {
+    height: 100%;
+    width: 33.33%;
+}
+
+.z p {
+    text-align: center;
+    line-height: 50px;
+}
+
+.trending {
+    height: 200px;
+    /* background: red; */
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+}
+
+
+.section4 {
+    /* background: lightgreen; */
+    height: 700px;
+    display: flex;
+    padding: 0 0 0 230px;
+    gap: 100px;
+}
+
+.section4 .a {
+    height: 600px;
+    background: url(https://nurimetin.github.io/eliteshoppy.github.io/images/bb1.jpg);
+    width: 40%;
+
+}
+
+.section4 .b {
+    height: 600px;
+    background: url(https://nurimetin.github.io/eliteshoppy.github.io/images/bottom3.jpg);
+    width: 40%;
+
+}
+
+.b .c {
+    height: 290px;
+
+}
+
+.b .d {
+    height: 290x;
+    margin-top: 20px;
+
+}
+
+.banner {
+    background: url(https://nurimetin.github.io/eliteshoppy.github.io/images/bot_2.jpg);
+    height: 400px;
+    display: flex;
+    text-align: center;
+    line-height: 400px;
+
+}
+
+.banner .e,
+.f {
+
+    width: 50%;
+    height: 400px;
+    font-size: 30px;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    color: white;
+}
+
+.section5 {
+    background: rgba(99, 97, 97, 0.374);
+    height: 200px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-align: center;
+    line-height: 200px;
+}
+
+.menu
+{
+    height: 170px;
+    line-height: 170px;
+
+
+}
+
+.menu li{
+    width: 25%;
+    margin-left: 160px;
+    display: inline;
+}
+
+.menu li a
+{
+    color: black;
+    
+}
+
+.section6 {
+    /* background: red; */
+    height: 900px;
+    text-align: center;
+    
+}
+
+.g {
+    background: url(https://nurimetin.github.io/eliteshoppy.github.io/images/m8.jpg);
+    height: 400px;
+    width: 75%;
+    margin:0 0 0 220px;
+    gap: 50px;
+    display: flex;
+
+}
+
+.g .h
+{
+    width: 25%;
+  
+}
+
+.i {
+    background: url(https://nurimetin.github.io/eliteshoppy.github.io/images/m1.jpg);
+    height: 400px;
+    width: 75%;
+    margin:50px 0 0 220px;
+    gap: 50px;
+    display: flex;
+   
+
+}
+
+.i .j
+{
+    width: 25%;
+  
+}
+
+.fixed 
+{ background: url(https://nurimetin.github.io/eliteshoppy.github.io/images/banner3.jpg);
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+    bottom: 50px;
+    height: 400px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: cursive;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    color: white;
+    
+}
+
+.section7
+{
+    background: #fff;
+    height: 250px;
+    width: 100%;
+    display: flex;
+}
+
+.section7 .k
+{
+    width: 25%;
+    height: 250px;
+}
+
+.k .l
+{
+    text-align: center;
+    background: #20c997;
+    height: 50px;
+    width: 50px;
+    margin: 100px 20px;
+}
+
+.footer
+
+{
+    height: 700px;
+    padding: 50px;
+    background: black;
+    color: white;
+
+}
+
+.footer1
+{
+    height: 400px;
+    display: flex;
+    gap: 50px;
+
+}
+
+.foot1 
+{
+    height: 100%;
+    width: 25%;
+}
+
+.icon6 
+{
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-top: 20px;
+   
+}
+
+.icon7 
+{
+    width: 20%;
+
+}
+
+.foot1 p
+{
+    margin-top: 20px;
+}
+
+.foot2 ,.foot3,.foot4
+{
+    width: 25%;
+  
+
+}
+
+.coman
+{
+    padding: 10px;
+}
+
+.phone
+{
+    height: 90px;
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.phone .phone1
+
+{
+    width: 20%;
+    font-size: 30px;
+    height: 45px;
+   margin: 10px;
+}
+
+.phone .phone2
+{
+    width: 800%;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.foot4 #img
+{
+height: 115px;
+display: flex;
+justify-content: space-evenly;
+padding: 10px;
+}
+
+.img1
+{
+    width: 30%;
+}
+
+.footer2
+{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    
+
+
+}
+
+.footer2 .ter 
+{
+    height: 100%;
+    width: 50%;
+    padding: 50px;
+}
+
+input
+{
+    height: 85%;
+    width: 80%;
+}
+
+button
+{
+    width: 20%;
+    height: 85%;
+}
+
+.fotter3
+{
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+
+}
+
+

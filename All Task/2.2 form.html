@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-table form</title>
+<style>
+
+    body{
+       width: 500px;
+       height: 630px;
+       background: linear-gradient(to right,#62dddb,#c713e2 50%);
+       background-repeat: no-repeat;
+    }
+
+    div{width: 1290px;
+        height: 550px;
+        background-color: white;
+        margin: 100px;
+         }
+
+         /* nav{
+            text-align: center;
+            font-size: 50px;
+            text-shadow: 3px 3px 5px rgba(255, 0, 0, 0.822),-3px -3px 5px rgb(3, 124, 164) ;
+             */
+            
+         
+
+         table{
+              margin: 0 0 0 200px;
+              
+              
+            }
+            .x{
+                border-bottom: 1px solid black;
+            
+                
+            }
+            input 
+            {
+                border:none;
+                
+            }
+
+            input:focus{
+                /* background-color: lightblue; */
+                /* border: none; */
+            }
+           
+            
+            nav{
+                
+                font-size: 40px;
+                background: linear-gradient(to right,#ab03c5 ,#86e8e6,#bb05d7 );
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                text-align: center;
+            }
+
+
+</style>
+    
+</head>
+<body>
+
+    <div>
+        
+        <form>
+           
+            
+            <table cellspacing="35px" >
+                <nav>Responsive Contact us Form</nav>
+                <tr>
+                    <td> First Name</td>
+                    <td>Last Nmae</td>
+                </tr>
+                <tr>
+                 
+                  <td class="x"><input type="text" size="50px"></td>
+                  <td class="x"><input type="text" size="50px"></td>
+                </tr>
+
+                <tr>
+                    <td>Email Address</td>
+                    <td>Website Name</td>
+                </tr>
+
+                <tr>
+                    <td class="x"><input type="email" size="50px"></td>
+                    <td class="x"><input type="text" size="50px"></td>
+                
+                </tr>
+
+                <tr>
+                    <td >Write Your Massage</td>
+                  
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="x"><input type="text" size="110px"></td>
+                    <td></td>
+                   
+                </tr>
+
+                <tr>
+                    <td><button style="width: 50%; height: 35px;background: linear-gradient(to right,#62dddb,#c713e2);">SUBMIT</button></td>
+                </tr>
+
+             </table>
+        </form>
+
+    </div>
+
+</body>
+</html>

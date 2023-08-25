@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background: lightcoral;
+            font-size: 30px;
+            padding: 60px;
+            text-align: center;
+        
+        }
+
+        ul{
+            margin: 0px;
+            padding: 0px;
+            
+        }
+
+        a{
+          text-decoration: none;
+          color: rgb(242, 124, 124);
+
+          
+          
+        }
+
+        .inline{
+            display: inline;
+            margin-right: 100px;
+            position: relative;
+            border: 1px solid white; 
+            background: linear-gradient(red,black,blue);
+            
+            
+            
+            
+        }
+        .absolute{
+            position: absolute;     
+            top: 40px;
+            left: 10px;
+            opacity: 0;
+            transition: 1s;
+            
+          
+        }
+
+        li:hover .absolute{
+
+            top: 200px;
+            opacity: 1;
+            }
+
+            .z{
+                position: relative;
+            }
+
+
+            .x{
+                position: absolute;
+                top: 0px;
+                left: 120px;
+                display: inline;
+                opacity: 0;
+                transition: 3;
+
+            } 
+
+            .z:hover .x{
+                opacity: 1;
+                
+
+            }
+      
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li class="inline"><a href="">HOME</a></li>
+            <li class="inline"><a href="">ABOUT</a></li>
+            <li class="inline"><a href="">SERVICE</a>
+             <ul class="absolute">
+                <li class="z"><a href=""></a>રવિ
+                
+                <ol class="x">
+                    <li><a href="">ravi</a></li>
+                    <li><a href="">durgesh</a></li>
+                    <li><a href="">jaydeep</a></li>
+                    <li><a href="">shivam</a></li>
+                </ol>
+                </li>
+                <li><a href=""></a>દુર્ગેશ</li>
+                <li><a href=""></a>જયદીપ</li>
+                <li><a href=""></a>શિવમ</li>
+            </ul> 
+            
+            </li>
+            <li class="inline"><a href="">MENU</a></li>
+        </ul>
+       
+    </div>
+</body>
+</html>

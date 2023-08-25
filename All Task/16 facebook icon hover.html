@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        .main 
+        { 
+            height: 100px;
+            width: 100px;
+            margin: 200px auto;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: 3s;
+           
+        }
+
+        .front,.right,.back,.left,.top,.bottom
+        {
+            height: inherit;
+            width: inherit;
+            background: lightblue;
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+            line-height: 100px;
+        
+            
+
+        }
+        .front
+        {
+            transform: rotateY(0deg) translateZ(50px);
+            background: red;
+            
+
+        }
+
+
+        .right
+        {
+               transform: rotateY(90deg) translateZ(50px);
+            background: lightslategrey;
+
+           
+       }
+
+       .back
+       {
+        transform: rotateY(180deg) translateZ(50px);
+        background: wheat;
+
+       }
+
+       .left
+       {
+        transform: rotateY(270deg) translateZ(50px);
+        background: black;
+        color: white;
+
+       }
+
+       .top
+            {
+                transform: rotateX(90deg) translatez(50px);
+            background: green;
+
+            }
+
+            .bottom
+            {
+                transform: rotateX(-90deg) translateZ(50px);
+            }
+
+        .main:hover 
+        {
+            transform: rotatex(-360deg) translateZ(0px) rotateY(-360deg) scale(3,3);
+         
+
+        } 
+
+        
+
+
+      
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        
+        <div class="front"></div>
+         
+         <div class="right"></div>
+
+         <div class="back"></div>
+
+         <div class="left"></div>
+
+         <div class="top"></div>
+
+         <div class="bottom"></div>
+
+    </div>
+
+</body>
+</html>

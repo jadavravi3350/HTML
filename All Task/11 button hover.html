@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main 
+        {
+            height: 110px;
+            width: 250px;
+            background: linear-gradient(yellow 5%,red 10%,rgb(62, 62, 220) 60%);
+            border: 5px solid blue;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 80px;
+            margin: 100px auto;
+            position: relative;
+            z-index: 0;
+            overflow: hidden;
+            border-radius: 50px;
+        }
+        .effect 
+        {
+            height: 200px;
+            width: 180px;
+            background: linear-gradient(to left,rgba(255, 255, 255, 0.4),white 50%,rgba(255, 255, 255, 0.356));
+            filter: blur(1px);
+            position: absolute;
+            top:-30px;
+            left:-185px;
+            z-index: -1;
+            transition: 1s;
+            rotate: 10deg;
+        }
+
+        .main:hover .effect 
+        {
+            left: 255px;
+         
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="main">
+        Hover ME
+        <div class="effect"></div>
+    </div>
+
+    
+</body>
+</html> 
+

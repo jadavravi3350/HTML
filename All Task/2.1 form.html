@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form all tag use</title>
+    
+</head>
+<body style="background-color: aqua;">
+    <h1 align="center">:::-Regitration form-:::</h1>
+    <form>
+    <table align="center" cellspacing="40px" style="background-color: chartreuse; color: blue;">
+    
+           
+          <tr>
+            <td>Name:</td>
+            <td><input type="name" placeholder="enter the name"> 
+               <!-- required="" pattern="[a-z A-Z]{10,25}" title="min 10 and max 25 letters only...!"> -->
+              </td>
+        </tr>
+         
+        <tr>
+            <td> Email:</td>
+            <td><input type="email" placeholder=" enter the email" required="@gmail.com" pattern="[a-z0-9]{5,25}" title="min 5 and max 25 letters only...!"></td>
+        </tr>
+
+          <tr>
+            <td>Password:</td>
+            <td><input type="password" placeholder="enter the password"></td>
+        </tr>
+
+          <tr>
+            <td> Phone no:</td>
+            <td><input type="text" placeholder=" enter the phone no"></td>
+        </tr>
+
+          <tr>
+            <td> Gender:</td>
+         <td style="color: brown;"> Male:<input type="radio" name="Gender" >
+          Female:<input type="radio" name="Gender">
+          Other:<input type="radio" name="Gender"></td>
+        </tr>
+
+          <tr>
+         <td>Date:</td>
+         <td><input type="date"></td>
+        </tr>
+
+          <tr>
+            <td>select food:</td>
+           <td><select><option value="" hidden>select food</option>
+        <option value="">apple</option>
+        <option value="">banana</option>
+        <option value="">mango</option>
+        <option value="">kevi</option>
+        </select></td>
+    </tr>
+
+        <tr>
+            <td>Select file:</td>
+            <td><input type="file"></td>
+        </tr>
+          
+          <tr>
+            <td>Range:</td>
+            <td><input type="range"></td></tr>
+         
+          <tr>
+            <th colspan="2"><button style="background-color: rgba(235, 49, 21, 0.936);">Regitration</button> <button style="background-color: aqua;">Reset</button></th>
+        
+        </tr>
+ 
+    </table>
+    </form>
+</body>
+</html>
+
