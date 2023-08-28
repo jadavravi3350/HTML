@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        .main
+        {
+            background: linear-gradient(90deg, rgba(2,0,36,1) 16%, rgba(0,212,255,1) 53%, rgba(9,9,121,1) 80%);
+            height: 700px;
+            width: 100%;
+            margin: auto;
+            position: relative;
+
+        }
+        .main *{ 
+            background: blue;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            
+
+           
+            
+        }
+
+        .div1
+        {
+            top: 0;
+            left: 0;
+            background: red;
+            font-size: 20px;
+            position: absolute;
+            animation: div1 2s linear infinite alternate;
+            
+        }
+
+        @keyframes div1
+        {
+            from{top: 0;left: 0;}
+            to{top: 90%;left: 95%;}
+          
+
+        }
+
+        .div2
+        {
+            top: 0;
+            left: 0;
+            background: blue;
+            position: absolute;
+            animation: div2 3s linear infinite alternate;
+            
+        }
+
+        @keyframes div2
+        {
+            0%{top: 0%;left: 0%;}
+           25%{top: 50%;left: 50%;}
+           75%{top: 88%;left: 0%;}
+           100%{top: 0;left: 0;}
+          
+        }
+
+        .div3
+        {
+            bottom: 0;
+            left: 0;
+            background: blue;
+            position: absolute;
+            animation: div3 3s linear infinite alternate;
+            
+        }
+
+        @keyframes div3
+        {
+            0%{bottom: 0;left: 0;}
+           25%{bottom: 50%;left: 50%;}
+           75%{bottom: 0%;left: 95%;}
+           100%{bottom: 0;left: 0;}
+          
+        }
+
+        .div4
+        {
+            bottom: 0;
+            right: 0;
+            background: blue;
+            position: absolute;
+            animation: div4 3s linear infinite alternate;
+            
+        }
+
+        @keyframes div4
+        {
+            0%{bottom: 0;right: 0;}
+           25%{bottom: 50%;right: 50%;}
+           75%{bottom: 88%;right: 0%;}
+           100%{bottom: 0;right: 0;}
+          
+        }
+
+        .div5
+        {
+            top: 0;
+            right: 0;
+            background: blue;
+            position: absolute;
+            animation: div5 3s linear infinite alternate;
+            
+        }
+
+        @keyframes div5
+        {
+            0%{top: 0;right: 0;}
+           25%{top: 50%;right: 50%;}
+           75%{top: 0%;right: 95%;}
+           100%{top: 0;right: 0;}
+          
+        }
+
+        .div6
+        {
+            top: 0;
+            right: 0;
+            background: red;
+            position: absolute;
+            animation: div6 2s linear infinite alternate;
+            
+        }
+
+        @keyframes div6
+        {
+           from{top: 0;right: 0;}
+           to{top: 88%;right: 95%;;}
+        }
+
+        .div7
+        {
+            top: 0;
+            left: 50%;
+            background: red;
+            position: absolute;
+            animation: div7 2s linear infinite alternate;
+            
+        }
+
+        @keyframes div7
+        {
+           from{top: 0;left: 50%;}
+           to{top: 88%;left: 50%;}
+        }
+
+        .div8
+        {
+            top: 50%;
+            left: 0%;
+            background: red;
+            position: absolute;
+            animation: div8 2s linear infinite alternate;
+            
+        }
+
+        @keyframes div8
+        {
+           from{top: 50%;left: 0%;}
+           to{ top: 50%;left: 95%;}
+        }
+
+        
+        .div9
+        {
+            top: 88%;
+            left: 0%;
+            background: red;
+            position: absolute;
+            animation: div9 2s linear infinite alternate;
+            
+        }
+
+        @keyframes div9
+        {
+           from{top: 88%;left: 0%;}
+           to{ top: 0%;left: 95%;}
+        }
+
+        .div10
+        {
+            top: 88%;
+            right: 0%;
+            background: red;
+            position: absolute;
+            animation: div10 2s linear infinite alternate;
+            
+        }
+
+        @keyframes div10
+        {
+           from{top: 88%;right: 0%;}
+           to{ top: 0%;right: 95%;}
+        }
+
+        .div11
+        {
+            top: 50%;
+            right: 0%;
+            background: red;
+            position: absolute;
+            animation: div11 2s linear infinite alternate;
+            
+        }
+
+        @keyframes div11
+        {
+           from{top: 50%;right: 0%;}
+           to{ top: 50%;right: 95%;}
+        }
+
+        .div12
+        {
+            top: 88%;
+            left: 50%;
+            background: red;
+            position: absolute;
+            animation: div12 2s linear infinite alternate;
+            
+        }
+
+        @keyframes div12
+        {
+           from{top: 88%;right: 50%;}
+           to{ top: 0%;left: 50%;}
+        }
+        .main * {
+            background: linear-gradient(red,blue);
+          
+        }
+
+        
+     </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="div1">DIV1</div>
+            <div class="div2">DIV2</div>
+            <div class="div3">DIV3</div>
+            <div class="div4">DIV4</div>
+            <div class="div5">DIV5</div>
+            <div class="div6">DIV6</div>
+            <div class="div7">DIV7</div>
+            <div class="div8">DIV8</div>
+            <div class="div9">DIV9</div>
+            <div class="div10">DIV10</div>
+            <div class="div11">DIV11</div>
+            <div class="div12">DIV12</div>
+
+        </div>
+    </body>
+</html>

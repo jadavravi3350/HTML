@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            border-radius: 50%;
+        }
+        .main
+        {
+            background: lightblue;
+            height: 600px;
+            width: 600px;
+            margin: 100px auto;
+            position: relative;
+            
+        }
+
+        .x,.y
+        {
+            background: red;
+            height: 350px;
+            width: 200px;
+            border: 5px solid;
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            animation: raghu 2s linear infinite alternate-reverse;
+        }
+
+        .y
+        {
+            left: 55%;
+            background-color: blue;
+
+
+        }
+
+        .x1,.y1
+        {
+            /* background: black; */
+            height: 100px;
+            width: 100px;
+            border: 40px solid ;
+            top: 30%;
+            left: 50%;
+            position: absolute;
+            animation: ravi 1s linear infinite alternate-reverse;
+        
+        }
+
+        .line,.line2
+        {
+            height: 10px;
+            width: 230px;
+            background: black;
+            border-radius: 0px;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            transform: rotate(-20deg);
+        }
+
+        .line2
+        {
+            left: 350px;
+            transform: rotate(20deg);
+        }
+
+        .mukh
+        {
+            height: 100px;
+            width: 200px;
+            background-color: blue;
+            position: absolute;
+            left: 200px;
+            bottom: 30px;
+            border: 2px solid;
+        }
+
+        @keyframes ravi 
+        {
+            from{transform: translate(0px,0px); }
+            to{transform: translate(-100px,20px); }
+
+        }
+
+        @keyframes raghu
+        {
+            from{transform: scale(1.2,.01);}
+            to{transform: scale(1,1);}
+
+        }
+
+        .tilak
+        {
+            /* background: lightcoral; */
+            height: 220px;
+            width: 100px;
+            border: 5px solid lightcoral;
+            border-radius: 50px;
+            border-top-color:lightblue ;
+            border-top-width: 50px;
+            position: absolute;
+            top: 0;
+            left: 250px;
+        }
+        .point
+        {
+            background-color: red;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+        }
+    </style>
+       
+        
+</head>
+<body>
+    <div class="main">
+        <div class="tilak">
+            <div class="point"></div>
+        </div>
+
+        <div class="line"></div>
+        <div class="line2"></div>
+        
+        
+
+     <div class="x">
+        <div class="x1"></div>
+     </div>
+
+     <div class="y">
+      <div class="y1"></div>
+     </div>
+     <div class="mukh"></div>
+
+    </div>
+</body>
+</html>
