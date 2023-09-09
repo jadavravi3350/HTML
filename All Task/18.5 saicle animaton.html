@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .main
+        {
+            position: relative;
+            background: aqua;
+            height: 400px;
+            width: 50%;
+            margin: 200px auto;   
+
+        }
+        .paidu1,.paidu2
+        {
+            background: repeating-conic-gradient(white 0deg,white 5deg,transparent 5deg,transparent 30deg);
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top: 70%;
+            left: 10%;
+            border: 10px solid white;
+            border-radius: 50%;
+            background-color: rgb(5, 5, 102);
+            animation: loader 1s linear infinite;
+
+        }
+
+        .paidu2
+        {
+            top: 70%;
+            left: 45%;
+        }
+
+        .x,.y
+        {
+            border-top: 50px solid white;
+            border-right: 50px solid white;
+            height: 120px;
+            width: 120px;
+            position: absolute;
+            top: 55%;
+            left: 20%;
+            transform: rotate(45deg);
+
+        }
+
+
+        .y{
+            top: 42%;
+            left: 27%;
+            transform: rotate(-45deg);
+        }
+
+        .z
+        {
+            background-color: white;
+            height: 75px;
+            width: 75px;
+            border-radius: 50%;
+            position: absolute;
+            top: 22%;
+            left: 36%;
+            animation: loader2 .5s linear infinite alternate;
+
+        }
+
+        @keyframes loader
+        {
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+
+        @keyframes loader2
+        {
+            from{top:22%; left: 36%;}
+            to{top: 15%; left: 40%;}
+        }
+    </style>
+
+    </head>
+    <body>
+        <div class="main">
+            <div class="paidu1"></div>
+            <div class="paidu2"></div>
+            <div class="x"></div>
+            <div class="y"></div>
+            <div class="z"></div>
+        </div>
+    </body>
+</html>

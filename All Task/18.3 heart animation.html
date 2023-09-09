@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+           box-sizing: border-box; 
+        }
+        .main{
+            height: 600px;
+            width: 600px;
+           margin: 100px auto;
+           animation: ravi 2s linear infinite alternate-reverse;
+           
+        }
+        
+        .x,.y
+        {
+            height: 350px;
+            width: 500px;
+            background: red;
+            border-radius: 180px 0 0 180px;
+            transform: rotate(45deg);
+            
+
+        }
+        .y
+        {
+        
+           
+            border-radius: 0 180px 180px 0;
+            transform: translate(111.8px,-345px) rotate(-45deg);
+
+        }
+        
+        @keyframes ravi
+        {
+            0%{transform: scale(0);}
+            25%{transform: scale(.9);}
+            50%{transform: scale(.41);}
+            75%{transform: scale(.5);}
+            100%{transform: scale(1);}
+
+
+
+        }
+    </style>
+</head>
+<body>
+   <div class="main">
+    <div class="x"></div>
+    <div class="y"></div>
+   </div>
+</body>
+</html>

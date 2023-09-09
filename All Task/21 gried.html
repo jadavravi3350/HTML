@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+        *{box-sizing: border-box;
+        border: 1px solid;}
+        
+        .a
+        {
+            background: grey;
+            display: grid;
+            place-items: center;
+            border: 1px solid;
+
+        }
+
+        .b
+        {
+         border: 1px solid;
+         background: blue;
+         height: 100px;
+         width: 100px;
+
+        }
+
+        .d 
+        {
+            background: lightgreen;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 100px auto;
+            padding: 30px;
+        }
+
+        .e1
+        {
+            overflow: auto;
+        }
+
+        .e2
+        {
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 2fr;
+            gap: 10px;
+            padding: 10px;
+            
+        }
+
+        .e4
+
+        {
+            display: grid;
+            
+
+        }
+        
+       
+
+        
+    </style>
+    </head>
+    <body>
+
+        <div class="a">
+            <div class="b">ravi</div>
+
+        </div>
+
+        <div class="d">
+            <div class="e1">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Quisquam ex accusantium distinctio consequatur officiis
+                illum error, ab iste explicabo, fugiat, veritatis voluptatibus
+                aliquam ipsum perspiciatis unde quia commodi qui aliquid. Lorem
+                ipsum dolor, sit amet consectetur adipisicing elit. Repellat,
+                assumenda. Odit modi repellendus numquam maiores minus quo alias
+                laudantium veniam labore optio officiis, provident libero
+                necessitatibus reiciendis temporibus accusantium facere!</div>
+
+            <div class="e2">
+                <div class="e3">col 1</div>
+                <div class="e3">col 2</div>
+                <div class="e3">col 3</div>
+                <div class="e3">col 4</div>
+
+                <div class="e4">
+
+                    <div class="e5"></div>
+                    <div class="e5"></div>
+
+                </div>
+
+                <div class="e3">col 6</div>
+                <div class="e3">col 7</div>
+                <div class="e3">col 8</div>
+
+            </div>
+            <div class="e">col 3</div>
+            <div class="e">col 4</div>
+
+        </div>
+
+        
+    </body>
+</html>

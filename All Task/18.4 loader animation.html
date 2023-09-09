@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            
+        .black
+        {
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            border-radius: 50%;
+            margin: 100px auto;
+            border: 20px solid  grey;
+            border-top: 20px solid greenyellow;
+            position: relative;
+            animation: loader 2s linear infinite;
+            
+
+
+
+          }
+
+          .f1,.f2
+          {
+            height: 21px;
+            width: 21px;
+            background-color: blue;
+            border-radius: 50%;
+            position: absolute;
+            top: 10px;
+            left: 13.5px;
+
+          }
+
+          .f2{
+            top: 15px;
+            left: 170px;
+          }
+
+          @keyframes loader
+          {
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+          }
+ 
+    </style>
+    </head>
+    <body>
+        <div class="black">
+            <div class="f1"></div>
+            <div class="f2"></div>
+
+        </div>
+    </body>
+</html>
