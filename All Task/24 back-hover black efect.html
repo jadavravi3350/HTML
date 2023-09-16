@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        body
+        {
+            display: flex;
+            margin-top: 100px;
+            gap: 10px;
+           
+        }
+
+        .img
+        {
+          background: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bot_1.jpg);
+          height: 400px;
+          width: 50%;
+          position: relative;
+          overflow: hidden;
+         text-align: center;
+         line-height: 400px;
+         color: white;
+         font-family: calibri;
+         font-size: 40px;
+         letter-spacing: 10px;
+         word-spacing: 5px;
+
+        }
+
+
+        .ravi
+        {
+            background: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bot_2.jpg);
+    
+        }
+
+
+        .black1,.black2
+        {
+            background-color: rgba(0, 0, 0, 0.199);
+            height: 400px;
+            width: 100%;
+            position: absolute;
+            top: -100%;
+            left: -100%;
+            transition: 1s;
+        }
+
+
+        .black2
+        {
+            top: 100%;
+            left: 100%;
+        }
+
+
+        span{
+            
+            color: #2fdab8;;
+        }
+
+
+        .img:hover .black1
+        {
+            top: 0;
+            left: 0;
+        }
+
+
+        .img:hover .black2
+        {
+            top: 0;
+            left: 0;
+        }
+
+       @media(max-width:500px) {
+
+        body
+        {
+           flex-direction: column;
+        }
+
+        .img
+
+        {
+            width: 100%;
+        }
+        
+       }
+
+
+    </style>
+    </head>
+    <body>
+        <div class="img">Flat <span>50%</span> Offer
+            <div class="black1"></div>
+            <div class="black2"></div>
+
+        </div>
+
+        <div class="img ravi">Flat <span>50% </span> Offer
+            <div class="black1"></div>
+            <div class="black2"></div>
+
+        </div>
+    </body>
+</html>

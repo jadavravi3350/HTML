@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        *{
+            box-sizing: border-box;
+
+        }
+
+        .main
+        {
+            border: 1px solid;
+            
+        }
+
+        .row
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            padding: 20px;
+            gap: 20px;
+
+
+        }
+
+        .col1
+        {
+            border: 1px solid;
+            
+        }
+
+        .col2
+        {
+            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrioqcx1yjB4sgbV2-YCBxp00nkmGIr-ac7MQdrBoCZ_h6lrC1g4Ak0ASfq7y8AaByM_M&usqp=CAU);
+
+            background-size: cover;
+        }
+
+        @media(max-width:500px)
+        {
+            .row {
+                grid-template-columns: 1fr;
+
+              
+ 
+            }
+
+            .col2{
+                height: 300px;
+            }
+        }
+        
+    </style>
+    </head>
+    <body>
+        <div class="main">
+
+            <div class="row">
+                <div class="col1">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrioqcx1yjB4sgbV2-YCBxp00nkmGIr-ac7MQdrBoCZ_h6lrC1g4Ak0ASfq7y8AaByM_M&usqp=CAU"
+                        alt height="100%" width="100%">
+
+                </div>
+
+                <div class="col1 col2">col1</div>
+                <div class="col1">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrioqcx1yjB4sgbV2-YCBxp00nkmGIr-ac7MQdrBoCZ_h6lrC1g4Ak0ASfq7y8AaByM_M&usqp=CAU"
+                        alt height="100%" width="100%">
+                </div>
+
+                <div class="col1 col2">col1</div>
+
+            </div>
+
+        </div>
+    </body>
+</html>

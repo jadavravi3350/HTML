@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body
+        {
+            margin-top: 100px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .img
+        {
+            background: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom1.jpg);
+            height: 300px;
+            width: 35%;
+            border: 20px solid rgba(0, 0, 0, 0.301);
+            background-origin: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-size: cover;
+            background-position: -50px;
+            transition: .5s;
+            position: relative;
+            font-family: calibri;
+
+        }
+
+        .img2
+        {
+            background: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom2.jpg);
+            background-position: -50px;
+        }
+
+        .fall
+        {
+            position: absolute;
+            top: 50px;
+            right: 40px;
+        }
+
+
+        .fall::first-letter
+        {
+           color: red;
+        }
+
+
+        .border
+        {
+            height: 250px;
+            width: 90%;
+            border: 5px solid white;
+            transform: translate(-50px,0px);
+            opacity: 0;
+            transition: .5s;
+            position: relative;
+          
+        }
+
+
+        .new
+        {
+            position: absolute;
+            top: 100px;
+            right: 40px;
+            font-size: 20px;
+            letter-spacing: 8px;
+
+        }
+
+
+        .img:hover .border
+        {
+           transform: translate(0px,0px);
+           opacity: 1;
+          
+        }
+
+
+        .img:hover 
+        {
+            background-position: 0px;
+        }
+
+        
+    </style>
+    </head>
+    <body>
+        <div class="img">
+            <h1 class="fall">FALL AHEAD</h1>
+            <div class="border">
+
+                <p class="new">New Arrivals</p>
+            </div>
+        </div>
+
+        <div class="img img2">
+            <h1 class="fall">FALL AHEAD</h1>
+            <div class="border">
+
+                <p class="new">New Arrivals</p>
+            </div>
+        </div>
+    </body>
+</html>

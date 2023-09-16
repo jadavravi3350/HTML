@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        *{
+            box-sizing: border-box;
+           
+        }
+
+        .x *{
+           border-radius: 50%;
+           display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .x
+        {
+            height: 600px;
+            width: 600px;
+            background-color: black;
+            margin: 100px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+        }
+
+        .main
+        {
+            height: 400px;
+            width: 400px;
+            background: conic-gradient(from 60deg,black,white);
+            animation: loader1 8s linear infinite;
+           
+            
+
+        }
+
+        .black
+        {
+            height: 390px;
+            width: 390px;
+            background-color: black;
+            position: relative;
+        }
+
+        .sun
+        {
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+
+        }
+
+
+        .main2
+        {
+            height: 100px;
+            width: 100px;
+            background: conic-gradient(from 60deg,white,black);
+            position: absolute;
+            top: 5%;
+            left: 80%;  
+            animation: loader2 1s linear infinite reverse;  
+
+        }
+
+        .black2
+        {
+            height: 90px;
+            width: 90px;
+            background-color: black;
+            position: relative;
+        }
+
+        .sun2
+        {
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+
+        }
+
+        .a 
+        {
+            height: 30px;
+            width: 30px;
+            background-color: red;
+            position: absolute;
+            top: 5%;
+            left: 80%;
+        }
+
+
+        @keyframes loader1
+        {
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+
+        }
+
+        @keyframes loader2
+        {
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+
+        }
+    </style>
+    </head>
+    <body>
+        <div class="x">
+
+            <div class="main">
+
+                <div class="black">
+
+                    <div class="sun"></div>
+
+                    <div class="main2">
+
+                        <div class="black2">
+
+                            <div class="a"></div>
+
+                            <div class="sun2"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </body>
+    </html>

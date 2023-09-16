@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+
+        .main
+        {
+            height: 500px;
+            width: 500px;
+            position: relative;
+            margin:100px auto;
+        }
+
+        h1
+        {
+            position: absolute;
+            top: 20%;
+            left: 38%;
+            color: red;
+           
+        }
+
+        .x
+        {
+            height: 300px;
+            width: 300px;
+            background: conic-gradient(white,blue); margin: 100px auto;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            animation: loader 2s linear infinite;
+          
+        }
+
+        .y
+        {
+            height: 250px;
+            width: 250px;
+            background-color: black;
+            border-radius: 50%;
+            color: white;
+            
+        }
+
+        @keyframes loader
+        {
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+
+    </style>
+
+    </head>
+    <body>
+        <div class="main">
+
+            <div class="x">
+                <div class="y"></div>
+            </div>
+
+           <h1>Loading . . .</h1>
+
+        </div>
+
+    </body>
+</html>

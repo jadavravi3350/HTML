@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body *
+        {
+            /* border: 2px solid; */
+            margin: 0;
+            padding: 0;
+           
+        }
+
+        .main
+        {
+         /* background-color: lightblue; */
+        }
+
+        .row1
+        {
+           
+            display: flex; 
+            padding: 20px; 
+            gap: 20%;
+        }
+        
+        .col1
+        {
+           width: 10%;
+           padding: 5px;
+        }
+
+        .col2
+        {
+            width: 70%;
+            padding: 10px;
+        }
+
+        ul li
+        {
+            display: inline;
+             font-size: 20px;
+            padding-left: 50px;
+            
+        }
+
+        a
+        {
+            text-decoration: none;
+            /* color: red; */
+        }
+
+        .row2
+        {
+            /* height: 500px; */
+            /* background: green; */
+            text-align: center;
+            font-size: 40px;
+           word-spacing: 5px;
+           letter-spacing: 2px;
+           padding: 50px;
+           background: url(https://lapinozpizza.in/assets/wla_new/lapinoz/img/banner3.jpg);
+           background-size: cover;
+           color: white;
+           
+        }
+
+        .row2 p
+        {
+            padding: 15px;
+        }
+
+        button
+        {
+            font-size: 30px;
+            padding: 10px;
+            border-radius: 30px 30px 30px 30px;
+        }
+
+
+        @media(max-width:500px)
+        {
+            .row1{
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  padding: 10px;
+            }
+
+            .col2{
+                display: none;     
+            }
+
+            .col1{width: 40%;
+            }
+
+            .row2{
+              
+              font-size: 20px;
+              background-position: -500px;
+            }
+           
+
+
+        }
+
+      
+        
+        
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="row1">
+            <div class="col1">
+                <img src="https://www.uengage.in/images/addo/logos/lapinoz-logo.png" alt="" height="100%" width="100%">
+            </div>
+
+            <div class="col2">
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>
+
+                </ul>
+            </div>
+
+
+
+        </div>
+
+        <div class="row2">
+          <p>More Then 600+ Outlest</p>
+          <p>Now Available In Your City</p>
+          <p>Order Pizza Online In Your Area</p>
+          <p>this is Your my sofe</p>
+          <p>Download The App For Seamless Experience</p>
+          <button>Download Now</button>
+
+
+        </div>
+
+         
+    </div>
+</body>
+</html>
