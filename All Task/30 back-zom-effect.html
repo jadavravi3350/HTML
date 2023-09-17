@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+            integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+
+            *
+            {
+                box-sizing: border-box;
+            }
+            
+
+            body
+            {
+                display: flex;
+                background-color: limegreen;
+                justify-content: space-evenly;
+                margin: 100px;
+            }
+
+        
+        .border
+        { 
+           border: 5px solid;
+           height: 350px;
+           width: 550px;
+           background-color: red;
+           position: relative;
+           overflow: hidden;
+          
+        }
+
+        
+        .a,.b
+        {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            font-size: 15px;
+            display: flex;
+            gap: 300px;
+            
+        }
+
+
+         .a .Featured
+        {
+            background: rgba(86, 216, 116, 0.85);
+        }
+
+
+        .a b
+        {
+            background: rgba(0, 0, 255, 0.555);
+            padding: 10px;
+            border-radius: 10px;
+            
+        }
+
+        .b{
+            top: 90%;
+            left: 20px;
+            
+        }
+
+
+     
+
+        .back-img
+        {
+            background: url(https://wpresidence.net/wp-content/uploads/2017/11/house_nice_2-525x328.jpg);
+            background-size: 100% 100%;
+            height: 400px;
+            width: 600px;
+            position: absolute;
+            top: -25px;
+            left: -25px;
+            transition: 1s;
+            transform: scale(1);
+            filter:brightness(70%);
+
+
+        }
+
+
+        .back-img:hover
+        {
+            transform: scale(1.1);
+            filter:brightness(100%);
+        }
+
+    </style>
+
+    </head>
+    <body>
+        <div class="border">
+
+            <div class="back-img"></div>
+
+            <div class="a">
+                <span>
+                    <b class="Featured">Featured</b>
+                </span>
+
+                <span>
+                    <b>Sales</b>
+                    <b>Active</b>
+                </span>
+            </div>
+
+            <div class="b">
+                <span>
+                    <b class="fa fa-location-arrow"></b>
+                    <b>Greenville, Jersey City</b>
+                </span>
+
+                <span>
+                    <b class="fa fa-video-camera"></b>
+                    <b class="fa fa-camera"></b>
+                    <b>7</b>
+                </span>
+            </div>
+
+        </div>
+        <!-- ********************************* -->
+
+        <div class="border">
+
+            <div class="back-img for-back">
+
+                <img
+                    src="https://wpresidence.net/wp-content/uploads/2017/09/interior1-768x480.jpg"
+                    alt height="100%" width="100%">
+            </div>
+
+            <div class="a">
+                <span>
+                    <b class="Featured">Featured</b>
+                </span>
+
+                <span>
+                    <b>Sales</b>
+                    <b>Active</b>
+                </span>
+            </div>
+
+            <div class="b">
+                <span>
+                    <b class="fa fa-location-arrow"></b>
+                    <b>Greenville, Jersey City</b>
+                </span>
+
+                <span>
+                    <b class="fa fa-video-camera"></b>
+                    <b class="fa fa-camera"></b>
+                    <b>8</b>
+                </span>
+            </div>
+
+        </div>
+
+    </body>
+</html>

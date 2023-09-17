@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+
+        *
+        {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .nav
+        {
+            background: lightblue;
+            text-align: center;
+            padding: 20px;
+        }
+
+        a{
+            border: none;
+            text-decoration: none;
+            font-size: 30px;
+            padding: 10px 80px 10px 80px;
+
+
+        }
+
+        .nav li a:hover
+        {
+            background-color: blue;
+        }
+
+
+        li{
+            
+            display: inline;
+           
+        }
+
+        .ravi,.jadav
+        {
+            position: relative;
+            
+        }
+
+        .x
+        {
+            position: absolute;
+            top: 30px;
+            left: 2px;
+            visibility: hidden;
+            padding-top: 100px;
+            transition: 1s;
+            box-shadow: 0 0 10px;
+  
+        }
+        
+
+        .ravi:hover .x
+        {
+         visibility: visible;
+         padding-top: 20px;
+ 
+        }
+
+        
+        .y
+        {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 125px;
+            box-shadow: 0 0 10px;
+            
+        }
+
+        .jadav:hover .y
+        {
+            display: block;
+        }
+
+
+        .x li a
+        {
+            display: block;
+            transition: .5s;
+            padding: 0 120px 0 50px;
+            
+            
+        }
+
+        .x li a:hover
+        {
+            background-color: blue;
+            color: white;
+            padding-right: 100px;
+        }
+ 
+
+        
+    </style>
+    </head>
+    <body>
+        <div class="nav">
+            <ul>
+                <li><a href>home</a></li>
+                <li class="ravi"><a href>service</a>
+
+                    <ul class="x">
+                        <li><a href>home1</a></li>
+                        <li><a href>home2</a></li>
+                        <li><a href>home3</a></li>
+
+                        <li class="jadav">
+                            <a href>home4</a>
+
+                            <ul class="y">
+                                <li><a href>done</a></li>
+                                <li><a href>done</a></li>
+                                <li><a href>done</a></li>
+                                <li><a href>done</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href>home5</a></li>
+                        <li><a href>home6</a></li>
+
+                    </ul>
+
+                </li>
+                <li><a href>contact</a></li>
+                <li><a href>search</a></li>
+                <li><a href>list</a></li>
+
+            </ul>
+        </div>
+    </body>
+</html>
