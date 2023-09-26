@@ -1,0 +1,876 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+/********************* nav start ***********************/
+
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0 0 5px;
+}
+
+.nav1,
+.nav2,
+.home {
+    display: grid;
+    place-items: center;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+    position: relative;
+}
+
+.fa-cart-shopping::after {
+    content: "0";
+    top: 5px;
+    right: 0px;
+    position: absolute;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0px 3px;
+}
+
+.women {
+    position: relative;
+}
+
+.dress {
+    height: 180px;
+    width: 200px;
+    position: absolute;
+    top: -140px;
+    left: -50px;
+    background-color: black;
+    color: rgba(110, 109, 109, 0.473);
+    padding: 20px 20px 20px 10px;
+    visibility: hidden;
+    transition: .5s;
+    z-index: -1;
+
+}
+
+.dress p {
+    padding-top: 4px;
+}
+
+.dress p:hover {
+    background-color: rgb(248, 66, 88);
+    height: 35px;
+    padding-left: 20px;
+    cursor: pointer;
+    transition: .5s;
+    color: white;
+
+}
+
+.women:hover .dress {
+    visibility: visible;
+    top: 40px;
+}
+
+.nav2 a:hover {
+    color: #f84258;
+}
+
+
+/********************* nav closed ***********************/
+
+
+/********************* section1 start *******************/
+
+.section1 {
+    background-image: url(../image/sect-1-back\ img.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+
+}
+
+.sect1 {
+    display: grid;
+    padding: 100px;
+    padding-top: 160px;
+}
+
+.new i {
+    font-size: 40px;
+    color: #f84258;
+}
+
+.amazing {
+    font-size: 30px;
+    animation: ravi 1s linear 3s;
+
+
+}
+
+@keyframes ravi {
+    from {
+        transform: translate(0px, -70px);
+        opacity: 0;
+    }
+
+    top {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+
+}
+
+.new p {
+    animation: ravi1 1s linear 5s;
+}
+
+@keyframes ravi1 {
+    from {
+        transform: translate(0px, 70px);
+        opacity: 0;
+    }
+
+    top {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+.shop {
+    padding-top: 50px;
+
+}
+
+.shop1 {
+    width: 35%;
+    text-align: center;
+    padding: 20px;
+    background-color: #f84258;
+    color: white;
+
+}
+
+.shop1:hover {
+    color: black;
+}
+
+/* ------------------------------------- */
+.sect2 {
+    display: grid;
+    padding: 50px 250px 0px 0px;
+
+}
+
+
+.ledi1 {
+    animation: ledi1 0.4s linear 8s;
+    position: relative;
+
+
+
+}
+
+@keyframes ledi1 {
+    0% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(0px, 640px) scale(1, 0);
+        opacity: 0;
+    }
+}
+
+
+.img1 {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    animation: img1 4s linear 7s;
+}
+
+@keyframes img1 {
+    0% {
+        top: 50px;
+        left: 200px;
+        opacity: 0;
+    }
+
+    25% {
+        top: 50px;
+        left: 50px;
+        opacity: 1;
+    }
+
+    75% {
+        top: 50px;
+        left: 50px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 50px;
+        left: -50px;
+        opacity: 0;
+    }
+}
+
+
+/********************* section1 closed *******************/
+
+
+
+/********************* section2 start *******************/
+
+
+.section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.next {
+    display: grid;
+    padding: 50px;
+}
+
+
+.car {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    gap: 20px;
+}
+
+
+.hover {
+    padding-top: 25px;
+    transition: 1s;
+}
+
+
+.fa-truck,
+.fa-retweet,
+.fa-lock {
+    transform: rotateY(-180deg);
+    color: white;
+    text-shadow: 0 0 10px red;
+    font-size: 21px;
+}
+
+
+.car:hover .hover {
+    padding-top: 10px;
+}
+
+
+/********************* section2 closed *******************/
+
+
+/********************* section3 start *******************/
+
+
+.section3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+
+.this1 {
+    background: url(../image/section\ 3\ back\ img\ 1.jpg);
+    background-size: cover;
+    display: grid;
+    padding-top: 80px;
+    grid-template-rows: 150px 130px 70px 150px;
+}
+
+
+.this1 * {
+    text-align: center;
+    display: grid;
+    align-items: center;
+
+}
+
+.shopwomen {
+    display: grid;
+    place-items: center;
+}
+
+
+.shopwomen1 {
+    padding: 20px 40px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.shopwomen1::after {
+    content: "Shop Women";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f84258;
+    padding: 20px 40px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+.shopwomen1:hover::after {
+    top: 0;
+    left: -176px;
+}
+
+
+.this2 {
+    position: relative;
+}
+
+
+.ganji {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 2s;
+}
+
+
+.this2:hover .ganji {
+    opacity: 1;
+}
+
+/********************* section3 closed *******************/
+
+
+/********************* section4 start *******************/
+
+
+.section4 {
+    display: grid;
+}
+
+
+.arrivals {
+    padding: 50px 0px;
+    text-align: center;
+}
+
+
+.arrivals h1 {
+    font-size: 50px;
+    /* font-family: 'themify'; */
+}
+
+
+.sect4 {
+    display: grid;
+    padding: 20px 150px 150px 150px;
+}
+
+
+.striped {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+
+.chample {
+    display: grid;
+    cursor: pointer;
+}
+
+
+.cham1hover {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.sect4-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    opacity: 0;
+    transform: scale(1);
+}
+
+
+.cham1hover:hover .sect4-img {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+
+.cham1 {
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+}
+
+
+.shopimy {
+    padding-top: 75px;
+    padding-left: 40px;
+    font-size: 20px;
+}
+
+
+.fa-cart-shopping {
+    background-color: #f2f2f2;
+    padding: 8px;
+    border-radius: 50%;
+    transform: 2s;
+}
+
+
+.fa-cart-shopping:hover {
+    background-color: #f84258;
+    color: white;
+}
+
+
+
+/********************* section4 closed *******************/
+
+
+/********************* section5 start *******************/
+
+
+.section5 {
+    background: url(../image/section5\ background.jpg);
+    background-size: cover;
+    background-position-x: center;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 150px 70px 150px 170px;
+    align-items: center;
+    padding-top: 100px;
+}
+
+
+.weeks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+}
+
+
+.days {
+    padding: 10px;
+}
+
+
+.day1 {
+    font-size: 40px;
+}
+
+
+.grab {
+    display: grid;
+    place-items: center;
+
+}
+
+
+.grab1 {
+    padding: 20px 150px;
+    background-color: black;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.grab1::after {
+    content: "Grab It Till You Can";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f84258;
+    padding: 20px 150px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+.grab1:hover::after {
+    top: 0;
+    left: -435px;
+}
+
+/********************* section5 closed *******************/
+
+/********************* section6 start *******************/
+
+
+
+.section6 {
+    display: grid;
+}
+
+
+.jacket {
+    padding: 50px 0px;
+    text-align: center;
+}
+
+
+.jack1 h1 {
+    font-size: 50px;
+    /* font-family: 'themify'; */
+}
+
+
+/********************* section6 closed *******************/
+
+
+/********************* section7 start *******************/
+
+
+.section7 {
+    display: grid;
+
+}
+
+.trending1 {
+    padding: 100px 0px 0px 150px;
+}
+
+.trending2 {
+    display: grid;
+    padding: 0px 150px 150px 150px;
+
+
+}
+
+.striped01 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.strip {
+    display: grid;
+    cursor: pointer;
+}
+
+
+.shirt-img {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.sect7-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    opacity: 0;
+    transform: scale(1);
+}
+
+
+.shirt-img:hover .sect7-img {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+
+.shirt2 {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+
+}
+
+
+.shopithis {
+    padding-top: 75px;
+    padding-left: 25px;
+    /* font-size: 20px; */
+}
+
+/********************* section7 closed *******************/
+
+
+/********************* section8 start *******************/
+
+.section8 {
+    background-color: #f4f4f4;
+    display: grid;
+}
+
+.newtown {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    gap: 40px;
+    margin: 90px auto;
+
+}
+
+/********************* section8 closed *******************/
+
+
+/********************* section9 start *******************/
+
+.section9 {
+    background: url(../image/section9-background.jpg);
+    background-position-x: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+
+}
+
+.subs * {
+    text-align: center;
+    color: #f4f4f4;
+}
+
+.subs h1 {
+    font-size: 60px;
+    font-family: 'Cormorant Garamond';
+}
+
+.subs input {
+    outline: none;
+    padding: 18px 105px;
+    margin-top: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: #888585;
+}
+
+.gra2 {
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+/********************* section9 closed *******************/
+
+
+/********************* section10 start *******************/
+
+.section10 {
+    background: url(../image/section10-back.jpg);
+    background-position-x: center;
+    display: grid;
+}
+
+
+.sect10 * {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.sect20 {
+    display: grid;
+    padding: 20px 160px 100px 160px;
+}
+
+.summer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+}
+
+.hit1 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.red-effect {
+    height: 700px;
+    width: 900px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f84258;
+    opacity: 0;
+    transition: .5s;
+}
+
+.img-scl {
+    transition: .4s;
+}
+
+.hit1:hover .img-scl {
+    transform: scale(1.2);
+}
+
+
+.hit1:hover .red-effect {
+    opacity: .7;
+}
+
+.hit2 {
+    padding: 65px 70px;
+    box-shadow: 0 0 10px;
+    background-color: white;
+}
+
+
+.messages {
+    display: grid;
+    grid-template-columns: 7fr 1.5fr;
+    gap: 30px;
+
+}
+
+.messe2 {
+    padding: 5px;
+    border-radius: 15px 15px 15px 15px;
+    background-color: #c6c4c44c;
+    padding-left: 15px;
+}
+
+.messe2:hover {
+    background-color: #f84258;
+    color: white;
+    cursor: pointer;
+}
+
+.hit2 h1:hover {
+    color: #f84258;
+    cursor: pointer;
+}
+
+
+.fa-comment {
+    font-size: 22px;
+    text-wrap: nowrap;
+
+}
+
+.liti-01 {
+    margin-top: 20px;
+    border-bottom: 2px solid #aaa8a845;
+}
+
+/********************* section10 closed *******************/
+
+
+/********************* footer start *******************/
+
+.footer * {
+    color: #f4f4f4;
+    font-size: 14px;
+}
+
+
+.footer {
+    background-color: #363636;
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    padding: 0px 0px 20px 180px;
+    height: 650px;
+}
+
+.follow1 {
+    display: grid;
+
+}
+
+.foot2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.visa {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+.jcb {
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+.jcb:hover,
+.over a:hover {
+    color: #888585;
+}
+
+.fo1 * {
+    padding-top: 10px;
+}
+
+.little {
+    display: grid;
+    grid-template-columns: 2.5fr 7.5fr;
+    padding-top: 18px;
+    gap: 15px;
+}
+
+.lit1 {
+    padding: 0px;
+}
+
+.fo2 b {
+    color: white;
+    font-size: 17px;
+}
+
+
+.fo3 p a:hover {
+    color:#f84258;
+    transition: .6s
+}
+
+
+.foot3
+{
+    border-top: 1px solid #b2b0b05d;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+/********************* footer closed *******************/

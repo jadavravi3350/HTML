@@ -1,0 +1,156 @@
+@media(max-width:1220px) {
+    .nav2 {
+        display: none;
+    }
+
+    .sect1 {
+        width: 0px;
+        white-space: nowrap;
+        padding: 35px;
+        padding-left: 10px;
+    }
+
+    .amazing h1 {
+        font-size: 30px;
+    }
+
+    .ledi1 {
+        transform: scale(.6, .6) translate(40px, 50px);
+    }
+
+    .sect2 {
+        width: 0%;
+    }
+
+
+    .sect4 {
+        padding: 20px 70px 70px 70px;
+
+    }
+
+    .striped01 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .trending2 {
+        display: grid;
+        padding: 0px 70px 70px 70px;
+
+    }
+
+    .sect20 {
+        padding: 20px 70px 50px 70px;
+
+    }
+
+    .footer
+    {
+        padding: 0px 0px 10px 60px;
+    }
+
+
+
+}
+
+
+@media(max-width: 1030px) {
+
+
+    .striped,
+    .striped01 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .section5 {
+        background-size: cover;
+    }
+
+    .trending2 {
+        padding: 0px 70px 70px 70px;
+    }
+
+    .newtown {
+        margin: 50px auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+
+    .summer {
+        grid-template-columns: 1fr;
+        /* row-gap: 0px; */
+    }
+
+    .visa
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+
+@media(max-width: 800px) {
+
+
+    .section2,
+    .section3,
+    .striped01 {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .next {
+        padding: 20px 50px;
+    }
+
+    .striped {
+        grid-template-columns: 1fr;
+        gap: 70px;
+    }
+
+    .sect4,
+    .section {
+        padding: 20px 70px 70px 70px;
+
+    }
+
+    .trending2 {
+        display: grid;
+        padding: 0px 70px 70px 70px;
+    }
+
+    .newtown {
+        margin: 50px auto;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .disnone {
+        display: none;
+    }
+
+    .sect20 {
+        padding: 10px 40px 25px 35px;
+
+    }
+
+    
+    .footer
+    {
+        padding: 0px 0px 0px 30px;
+        height: auto;
+        
+    }
+
+    .foot2
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .visa
+    {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        
+    }
+
+}

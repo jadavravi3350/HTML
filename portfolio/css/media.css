@@ -1,0 +1,63 @@
+@media(max-width:1250px) {
+    .mywork2 {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .resu1 p {
+        padding-left: 50px;
+    }
+
+    .abo1 {
+        padding-right: 25px;
+    }
+
+}
+
+@media(max-width:770px) {
+    .nav2 {
+        display: none;
+    }
+
+    .mywork2 {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .work {
+        width: 100%;
+
+    }
+
+    .mywork1 {
+        padding-left: 80px;
+    }
+
+    .port-img {
+        flex-direction: column;
+    }
+
+    .po-img1 {
+        width: 100%;
+    }
+
+    .resu1,
+    .resu2 {
+        width: 100%;
+    }
+
+    .abo1 {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .social {
+        width: 100%;
+    }
+
+    .formyou {
+        width: 95%;
+    }
+
+
+}
