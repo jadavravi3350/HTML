@@ -1,0 +1,13 @@
+.MODULE
+{
+  text-align: center;
+}
+
+.list
+{
+  margin: 0 auto;
+  background-color: lightgreen;
+  text-align: center;
+  width: 50%;
+  padding: 10px;
+}
